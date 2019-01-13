@@ -9,10 +9,14 @@ public class FollowPlayer : MonoBehaviour
     private Vector3 offset;
 
     void Start() {
+        // get the currentr offset between player and camarea positions
         offset = transform.position - playerObject.transform.position;
     }
 
     void LateUpdate() {
-        transform.position = Vector3.Lerp(transform.position, playerObject.transform.position + offset, lerpSpeed);
+        transform.position = Vector3.Lerp(
+            transform.position,                         // current camera position
+            playerObject.transform.position + offset,   // new position plus our original offset
+            lerpSpeed);                                 // the speed of smoothing
     }
 }
