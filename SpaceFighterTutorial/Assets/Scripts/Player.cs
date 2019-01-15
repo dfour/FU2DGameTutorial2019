@@ -59,6 +59,15 @@ public class Player : MonoBehaviour
         }
     }
 
+    // allows public access to amount of bullets left
+    public float getMagazine() {
+        return magazine;
+    }
+
+    public bool isReloading() {
+        return reloading;
+    }
+
     private void startReload() {
         reloading = true;
         reloadTimer = currentWeapon.reloadSpeed;

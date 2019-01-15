@@ -3,12 +3,16 @@
 The aim of this tutorial is to have a complete guide from start to publish on the Itch.io platform. Many tutorials show how to to a single task and that's great for showing how to do a single section of code but I find this fails to show how all the different sections work together.  This tutorial is focused on the process from beginning to end. This includes rewriting many areas of code to work with new features.
 
 Project Setup - [ProjectSetup] 
-Player Movement -  [Player Movement]
-Background Tiling and Camera - [Background Tiling and Camera ]
-Bullets and Prefabs - [Bullets and Prefabs]
-Enemy Ai and Colliders -  [Enemy Ai and Colliders]
-Scriptable Objects Weapons - [Scriptable Objects Weapons]
 
+Player Movement -  [Player Movement]
+
+Background Tiling and Camera - [Background Tiling and Camera ]
+
+Bullets and Prefabs - [Bullets and Prefabs]
+
+Enemy Ai and Colliders -  [Enemy Ai and Colliders]
+
+Scriptable Objects Weapons - [Scriptable Objects Weapons]
 
 
    [ProjectSetup]: <https://www.gamedevelopment.blog/full-unity-2d-game-tutorial-2019/>
