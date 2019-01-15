@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IEntityHealth
 {
     public float moveSpeed = 5f;
-    public float hitPoints = 100f;
+    public float hitpoints = 100f;
     private Rigidbody2D rb;
+
+    private bool isDead = false;
 
 
     public ScObWeapon currentWeapon;
@@ -82,10 +84,23 @@ public class Player : MonoBehaviour
             pointMouseVector.z = 0; // set z to 0, this is 2D
             GameObject go = Instantiate(currentWeapon.bulletPrefab, gameObject.transform.position, Quaternion.identity);
             Bullet bullet = go.GetComponent<Bullet>();
+            go.layer = 8; // set out bullet to the player layer
             Vector3 targetVector = pointMouseVector - gameObject.transform.position;
             bullet.targetVector = targetVector;
             lastFired = currentWeapon.fireRate; // we just fired, add a delay with lastFired timer
             magazine -= 1;  // bye bye bullet
+        }
+    }
+
+    public void IGainHealth(float health) {
+        // do nothing yet
+    }
+
+    public void ITakeDamage(float damage) {
+        hitpoints -= damage;
+        if (hitpoints <= 0) {
+            isDead = true;
+            Debug.Log("Our Player died, do nothing for now");
         }
     }
 }

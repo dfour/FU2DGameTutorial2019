@@ -26,4 +26,13 @@ public class Bullet: MonoBehaviour
             Destroy(gameObject);    // kill me
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        IEntityHealth itd = collision.GetComponent<IEntityHealth>();
+        if (itd != null) {
+            itd.ITakeDamage(damage);
+            lifetime = 0f; // I did my part. Join the mobile infantry today!
+        }
+
+    }
 }
