@@ -120,6 +120,76 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &395784067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395784069}
+  - component: {fileID: 395784068}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &395784068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395784067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 2787e0c055ea66e47a4bfc83efe1353e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: laser
+    clip: {fileID: 8300000, guid: 5dd9b625a7438104384091479a256ba6, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  playlist:
+  - name: Bacterial Love
+    clip: {fileID: 8300000, guid: 4e95aec5beb162847bb6a526d3c06d2a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Metallius
+    clip: {fileID: 8300000, guid: 3d1173e5f98214f48a8f4a0ebc076f55, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: 
+    clip: {fileID: 8300000, guid: 2bc5542ee516e0240ba8960e21c5e72a, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+--- !u!4 &395784069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395784067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473489192
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,7 +812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1427788804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,12 +1123,12 @@ PrefabInstance:
     - target: {fileID: 823208790875438143, guid: 826a4bb4ffe1f874b8291a360ebd5759,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.86
+      value: -5.11
       objectReference: {fileID: 0}
     - target: {fileID: 823208790875438143, guid: 826a4bb4ffe1f874b8291a360ebd5759,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.06
+      value: 2.77
       objectReference: {fileID: 0}
     - target: {fileID: 823208790875438143, guid: 826a4bb4ffe1f874b8291a360ebd5759,
         type: 3}
